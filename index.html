@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard UMKM - Haikal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Haikal Mart Dashboard</h2>
+        <p>Nama: Muh. Haikal | NPM: 2440304032 | Prodi: Teknik Komputer</p>
+        <div id="sync-info" style="font-size: 12px; margin-top: 5px;">Status: Menunggu data...</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#form-section">Form Catatan</a></li>
+        </ul>
+    </nav>
+
+    <div id="error-box" class="hidden">
+        <p id="error-text">Gagal memuat data!</p>
+        <button id="retry-btn">Coba Lagi</button>
+    </div>
+
+    <div class="container" id="dashboard">
+        <div class="card-info">
+            <h3>Analisis Data Produk</h3>
+            <p>Rata-rata Harga: <span id="avg-price">$0</span></p>
+            <p>Produk Termahal: <span id="max-product">-</span></p>
+            <p>Total Kategori: <span id="total-category">0</span></p>
+        </div>
+
+        <div class="controls-box">
+            <label>Tampilkan per halaman: </label>
+            <select id="limit-select">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="20">20</option>
+            </select>
+        </div>
+
+        <div id="loading" class="loading">Memuat produk dari server...</div>
+        <div id="product-container" class="grid-layout"></div>
+        <div class="pagination">
+            <button id="prev-btn">Sebelumnya</button>
+            <span id="page-indicator">Halaman 1</span>
+            <button id="next-btn">Berikutnya</button>
+        </div>
+
+        <hr style="margin: 30px 0;">
+        <div class="form-section" id="form-section">
+            <h3>Form Catatan</h3>
+            <form id="feedback-form">
+                <div>
+                    <label for="note-input">Catatan (Minimal 30 Karakter):</label><br>
+                    <textarea id="note-input" rows="4" style="width: 100%; padding: 8px; margin-top: 5px;" placeholder="Tuliskan catatan pengelolaan produk minimal 30 karakter..."></textarea>
+                </div>
+                <div id="msg-box" style="margin: 8px 0; font-size: 13px;"></div>
+                <button type="submit" class="btn-submit">Kirim Catatan</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Muh. Haikal (2440304032) - Teknik Komputer UBT</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
