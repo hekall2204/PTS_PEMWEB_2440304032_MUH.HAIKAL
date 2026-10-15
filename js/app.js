@@ -80,11 +80,10 @@ function tampilkanDataHalaman() {
 
     let totalHalaman = Math.ceil(productsData.length / rowsPerPage);
     document.getElementById('page-indicator').innerText = `Halaman ${currentPage} dari ${totalHalaman || 1}`;
-    
     document.getElementById('prev-btn').disabled = currentPage === 1;
     document.getElementById('next-btn').disabled = currentPage >= totalHalaman;
 }
-
+// Logika Pagination
 document.getElementById('prev-btn').addEventListener('click', () => {
     if (currentPage > 1) {
         currentPage--;
