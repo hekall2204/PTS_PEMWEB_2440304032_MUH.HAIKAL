@@ -83,6 +83,7 @@ function tampilkanDataHalaman() {
     document.getElementById('prev-btn').disabled = currentPage === 1;
     document.getElementById('next-btn').disabled = currentPage >= totalHalaman;
 }
+
 // Logika Pagination
 document.getElementById('prev-btn').addEventListener('click', () => {
     if (currentPage > 1) {
@@ -104,6 +105,7 @@ document.getElementById('limit-select').addEventListener('change', (e) => {
     currentPage = 1;
     tampilkanDataHalaman();
 });
+
 // Challenge Retry Button
 retryBtn.addEventListener('click', () => {
     loadData();
@@ -113,10 +115,10 @@ const form = document.getElementById('feedback-form');
 const inputNote = document.getElementById('note-input');
 const msgBox = document.getElementById('msg-box');
 
+// Validasi Form Catatan
 form.addEventListener('submit', function(e) {
     e.preventDefault();
     let teks = inputNote.value.trim();
-// Validasi Form Catatan
     if (teks.length < 30) {
         msgBox.style.color = 'red';
         msgBox.innerText = `Gagal! Catatan masih ${teks.length} karakter. Minimal harus 30 karakter!`;
