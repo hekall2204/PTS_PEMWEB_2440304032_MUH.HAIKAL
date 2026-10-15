@@ -26,7 +26,7 @@ async function loadData() {
         productsData = data.products;
 
         loadingEl.style.display = 'none';
-        
+        // Fungsi untuk menghitung statistik data
         hitungStatistik();
         tampilkanDataHalaman();
         
