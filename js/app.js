@@ -108,7 +108,7 @@ document.getElementById('limit-select').addEventListener('change', (e) => {
 retryBtn.addEventListener('click', () => {
     loadData();
 });
-
+// Validasi Form Catatan
 const form = document.getElementById('feedback-form');
 const inputNote = document.getElementById('note-input');
 const msgBox = document.getElementById('msg-box');
