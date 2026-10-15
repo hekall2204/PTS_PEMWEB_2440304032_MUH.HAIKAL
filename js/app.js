@@ -104,11 +104,11 @@ document.getElementById('limit-select').addEventListener('change', (e) => {
     currentPage = 1;
     tampilkanDataHalaman();
 });
-
+// Challenge Retry Button
 retryBtn.addEventListener('click', () => {
     loadData();
 });
-// Validasi Form Catatan
+
 const form = document.getElementById('feedback-form');
 const inputNote = document.getElementById('note-input');
 const msgBox = document.getElementById('msg-box');
@@ -116,7 +116,7 @@ const msgBox = document.getElementById('msg-box');
 form.addEventListener('submit', function(e) {
     e.preventDefault();
     let teks = inputNote.value.trim();
-
+// Validasi Form Catatan
     if (teks.length < 30) {
         msgBox.style.color = 'red';
         msgBox.innerText = `Gagal! Catatan masih ${teks.length} karakter. Minimal harus 30 karakter!`;
