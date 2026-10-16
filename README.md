@@ -83,3 +83,12 @@ function hitungStatistik(data) {
 = 
 - Bikin kolom Pencarian (Search) secara real-time biar gampang nyari produk tertentu.
 - Menambahkan fitur Dark Mode (Mode Gelap) yang preferensinya disimpan di localStorage.
+
+# AI Usage Log
+
+Sesuai dengan kebijakan penggunaan AI, AI digunakan secara terbatas untuk *brainstorming*, penjelasan konsep, dan verifikasi tanpa menggantikan proses pemahaman serta pengujian mandiri.
+
+| Tanggal | AI/Tool | Tujuan | Prompt / Ringkasan | Bagian Digunakan | Verifikasi / Modifikasi |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **15 Okt 2026** | Gemini | Verifikasi ketentuan PTS | Meminta bantuan mencocokkan fitur/komponen proyek dengan kriteria dan rubrik penilaian PTS. | Checklist evaluasi fitur dan kesesuaian struktur tugas | Memeriksa ulang poin-poin ketentuan secara mandiri, menambahkan dokumentasi pendukung yang kurang, serta memastikan seluruh implementasi sesuai dengan kode riil. |
+| **16 Okt 2026** | Gemini | Brainstorming & penyusunan skrip | Meminta bantuan merancang alur dan narasi skrip video demonstrasi project. | Struktur alur video dan draf narasi/voiceover | Menyesuaikan poin penjelasan agar sesuai dengan fitur riil proyek, memangkas durasi yang Terlalu panjang, dan menyesuaikan gaya penyampaian. |
